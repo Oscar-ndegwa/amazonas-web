@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Amazon Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-container">
+            <div class="auth-logo">
+                <h1>amazon</h1>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form" id="loginForm">
+                <h2>Sign In</h2>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Sign In</button>
+                </form>
+                <p class="auth-divider">New to Amazon?</p>
+                <button class="auth-switch-btn" onclick="showRegisterForm()">Create your Amazon account</button>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="auth-form" id="registerForm" style="display: none;">
+                <h2>Create Account</h2>
+                <form onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="registerName">Your name</label>
+                        <input type="text" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" required minlength="6">
+                        <small>Password must be at least 6 characters</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPasswordConfirm">Re-enter password</label>
+                        <input type="password" id="registerPasswordConfirm" required>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Create your Amazon account</button>
+                </form>
+                <p class="auth-divider">Already have an account?</p>
+                <button class="auth-switch-btn" onclick="showLoginForm()">Sign In</button>
+            </div>
+        </div>
+        
+        <div class="auth-footer">
+            <p>© 2026 Amazon-Style Store. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html>

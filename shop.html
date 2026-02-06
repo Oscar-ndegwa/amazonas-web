@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Style E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>amazon</h1>
+            </div>
+            <div class="search-bar">
+                <select class="search-category">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Clothing</option>
+                    <option>Home & Garden</option>
+                </select>
+                <input type="text" placeholder="Search products..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="header-nav">
+                <div class="nav-item">Hello, Sign in</div>
+                <div class="nav-item">Returns & Orders</div>
+                <div class="nav-item cart">
+                    🛒 Cart <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li>Today's Deals</li>
+            <li>Customer Service</li>
+            <li>Gift Cards</li>
+            <li>Registry</li>
+            <li>Sell</li>
+        </ul>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="banner-content">
+            <h2>Great Deals This Week</h2>
+            <p>Shop the latest products at unbeatable prices</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <main class="main-content">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press Releases</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li>Sell on Amazon</li>
+                    <li>Become an Affiliate</li>
+                    <li>Advertise Your Products</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li>Your Account</li>
+                    <li>Returns Center</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Amazon-Style Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
